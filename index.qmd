@@ -1,6 +1,38 @@
 ---
-title: "letscode"
+title: "Data Structure and Algorithms"
+author: Rafiq Islam
+categories: [Binary Search, Linear Search, Sort, BFS, Dynamical Programming]
+citation: true
+lightbox: true
+search: true
+listing: 
+    contents: "/posts/"
+    type: grid
+    categories: true
+    fields: [author, date, title, image]
+format: 
+    html: default
+    ipynb: default
+    docx: 
+      toc: true
+      adsense:
+        enable-ads: false
+    epub:
+      toc: true
+      adsense:
+        enable-ads: false
+    pdf: 
+      toc: true
+      pdf-engine: pdflatex
+      adsense:
+        enable-ads: false
+      number-sections: false
+      colorlinks: true
+      cite-method: biblatex
+toc-depth: 4
 ---
+
+# DSA
 
 This is a Quarto website.
 
