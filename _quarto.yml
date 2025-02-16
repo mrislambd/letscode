@@ -24,8 +24,16 @@ website:
         text: Portfolio
       - href: https://mrislambd.github.io/cv.html
         text: CV
-      - href: https://mrislambd.github.io/blog.html
-        text: Blog
+      - text: Blog
+        menu: 
+          - text: "Data Science and Machine Learning"
+            href: https://mrislambd.github.io/posts/machinelearning/
+          - text: "Data Structure and Algorithm"
+            href: https://mrislambd.github.io/letscode/
+          - text: "Statistics and Probability"
+            href: https://mrislambd.github.io/posts/jobandintern/
+          - text: "Other Blogs"
+            href: https://mrislambd.github.io/blog.html
       - icon: linkedin
         href: https://www.linkedin.com/in/mohammad-rafiqul-islam/
         target: _blank
