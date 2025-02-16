@@ -2,15 +2,8 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "letscode",
+    "title": "Data Structure and Algorithms",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n\n\n\n\n Back to top"
+    "text": "DSA\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to topCitationBibTeX citation:@online{islam,\n  author = {Islam, Rafiq},\n  title = {Data {Structure} and {Algorithms}},\n  url = {https://mrislambd.github.io/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nIslam, Rafiq. n.d. “Data Structure and Algorithms.” https://mrislambd.github.io/."
   }
 ]
