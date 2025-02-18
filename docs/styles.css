@@ -65,3 +65,23 @@ pre {
   border-radius: 4px;
 }
 
+details {
+  border: none;
+  padding: 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+details[open] {
+  padding: 0;
+}
+
+details[open] summary {
+  border-bottom: none;
+  margin-bottom: 0;
+}

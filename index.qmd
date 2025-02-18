@@ -2,14 +2,8 @@
 title: "Data Structure and Algorithms"
 author: Rafiq Islam
 categories: [Binary Search, Linear Search, Sort, BFS, Dynamical Programming]
-citation: true
 lightbox: true
 search: true
-listing: 
-    contents: "/posts/"
-    type: grid
-    categories: true
-    fields: [author, date, title, image]
 format: 
     html: default
     ipynb: default
@@ -32,8 +26,81 @@ format:
 toc-depth: 4
 ---
 
-# DSA
+## Binary Search 
 
-This is a Quarto website.
+1. <details>
+    <summary>Leetcode 69: Sqrt(x) </summary>
+    Given a non-negative integer, $x$, return the square root of $x$ rounded down to the nearest integer. The returned integer should be non-negative as well.  
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+    You may not use any built-in exponent function. For example, `x**0.5` in python.  
+
+    Example: 
+
+    ```python
+    Input: x=4
+    Output: 2  
+
+    Input: x=8
+    Output: 2
+    ```  
+    Explanation: Square root of 4 is 2 and square root of 8 is 2.8284. But we need to round down to any fraction. Therefore, the square root of 8 is also 2.  
+
+    **Solution:**  
+
+    The square root of any number $x\ge 0$ is less than or equal to $x$. The brute force solution to this would be $\mathcal{O}(\sqrt{n})$. Because, say $x=8$, then  
+
+    for $i=1$ to 8:
+    \begin{align*}
+      1^2 & = 1 <8 \\
+      2^2 & = 4 <8\\
+      3^2 & = 9 >8
+    \end{align*}
+
+    ```{python}
+    #| echo: false
+    #| warning: false
+    #| output: asis
+    import numpy as np 
+    import matplotlib.pyplot as plt
+    from mywebstyle import plot_style
+    plot_style('#f4f4f4')
+
+    x = np.arange(0.01,100,0.01)
+    y1 = np.sqrt(x)
+    y2 = np.log(x)
+    plt.plot(x,y1, label='$y=\sqrt{x}$')
+    plt.plot(x,y2, label='$y=\log{x}$')
+    plt.legend()
+    ```  
+
+    In contrast, if we explore binary search then the time complexity reduces to $\mathcal{O}(\log{n})$. Say the square root is $s$ which is the middle value in the range of 1 to $x$. Then if $s^2>x$, we search for the root in the left half. Otherwise, if $s^2<x$ then we search the right side. However, when $s^2<x$, then $s$ is a possible candidate for the square root.  
+
+    *Algorithm:*  
+
+    1. set left value $l= 0$, right value $r= x$  
+    2. Compute the middle value $m=l+(r-l)/2$  
+    3. If $m^2 > x$ then search the left side: set $r=m-1$  
+    4. If $m^2 < x$ then search the right side: set $l=m+1$  
+    ```{python}
+    #| output: asis
+    def square_root(x):
+      l, r = 0, x 
+      sq = 0
+      while l<=r:
+        m = l + (r-l)//2 
+        if m**2 > x:
+          r= m-1
+        elif m**2 < x:
+          l = m+1 
+          sq = m
+        else:
+          return m  
+      return sq 
+      
+    print(square_root(6))
+    ```  
+
+
+  </details>  
+2. item  
+3. item  

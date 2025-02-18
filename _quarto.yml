@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources: 
+    - ads.txt
 
 website:
   page-navigation: true
@@ -71,6 +73,9 @@ google-analytics:
 
 adsense: 
   publisher-id: ca-pub-6878992848042528
+filters: 
+  - adsense
+  - quarto-version.lua
 
   
 format:
