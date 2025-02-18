@@ -62,7 +62,7 @@ toc-depth: 4
     #| output: asis
     import numpy as np 
     import matplotlib.pyplot as plt
-    from mywebstyle import plot_style
+    from mywebstyle.plot_style import plot_style
     plot_style('#f4f4f4')
 
     x = np.arange(0.01,100,0.01)
