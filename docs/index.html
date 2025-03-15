@@ -327,7 +327,7 @@ Problem 1: Leetcode 69: Sqrt(x)
 </li>
 <li>If <span class="math inline">\(m^2 &lt; x\)</span> then search the right side: set <span class="math inline">\(l=m+1\)</span></li>
 </ol>
-<div id="793b555d" class="cell" data-execution_count="2">
+<div id="da051154" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> square_root(x):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  l, r <span class="op">=</span> <span class="dv">0</span>, x </span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  sq <span class="op">=</span> <span class="dv">0</span></span>
@@ -426,7 +426,7 @@ Problem 1: Leetcode 242: Valid Anagram
 </ul>
 <p><strong>Solution:</strong><br>
 We can use <code>hasmap</code> to solve this problem. Basically, we will create two hasmaps for two words and match the keys and values of the hasmaps. If they are equal then it’s an anagram, otherwise not.</p>
-<div id="0f6cea60" class="cell" data-execution_count="5">
+<div id="99cab4e4" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> isAnagram(s,t):</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="bu">len</span>(s) <span class="op">!=</span> <span class="bu">len</span>(t):</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">False</span> </span>
@@ -457,7 +457,7 @@ False</code></pre>
 <p><strong>Time and Space Complexity:</strong><br>
 Time complexity <span class="math inline">\(\mathcal{O}(m+n)\)</span> where <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are the length of <code>s</code> and <code>t</code> and memory complexity is the same <span class="math inline">\(\mathcal{O}(m+n)\)</span></p>
 <p>Optimization: Can we solve the problem in <span class="math inline">\(\mathcal{O}(1)\)</span>? If we assume sort doesn’t require extra space, then</p>
-<div id="42fe1954" class="cell" data-execution_count="6">
+<div id="b1f273d9" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> isAnagram(s,t):</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="bu">sorted</span>(s)<span class="op">==</span> <span class="bu">sorted</span>(t)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1324,7 +1324,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","openEffect":"zoom","loop":false,"descPosition":"bottom"});
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Powered by <a href="https://quarto.org/">Quarto</a> 1.5.54</p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Copyright 2024 @ Rafiq Islam
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./license.txt">
+<p>License</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/rafiqr35" target="_blank">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://youtube.com/@quanttube" target="_blank">
+      <i class="bi bi-youtube" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:rafiqfsu@gmail.com?subject&amp;body" target="_blank">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
