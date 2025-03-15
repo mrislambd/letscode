@@ -43,7 +43,7 @@ website:
         href: "https://github.com/mrislambd"
         target: _blank
 
-page-footer: 
+  page-footer: 
     background: "#782F40"
     left: "Powered by [Quarto](https://quarto.org/) <?quarto.version?>"
     center:

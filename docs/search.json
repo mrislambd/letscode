@@ -18,7 +18,7 @@
     "href": "index.html#array",
     "title": "Leetcode: Data Structure and Algorithms",
     "section": "Array",
-    "text": "Array\n\n\n\n\n\n\nProblem 1: Intersection of two sets\n\n\n\n\n\nSay, we are given two sets \\(A=[2,3,5,6,8]\\) and \\(B=[4,6,8]\\). We want to find the intersection of the elements in these sets.\ndef intersection_of_two_sets(A,B):\n  set_a = set(A)\n  return [b for b in B if b in set_a]\n\nA = [2,3,5,6,8]\nB = [4,6,8]\nprint(intersection_of_two_sets(A,B))\n[6, 8]"
+    "text": "Array\n\n\n\n\n\n\nProblem 1: Intersection of two sets\n\n\n\n\n\nSay, we are given two sets \\(A=[2,3,5,6,8]\\) and \\(B=[4,6,8]\\). We want to find the intersection of the elements in these sets.\ndef intersection_of_two_sets(A,B):\n  set_a = set(A)\n  return [b for b in B if b in set_a]\n\nA = [2,3,5,6,8]\nB = [4,6,8]\nprint(intersection_of_two_sets(A,B))\n[6, 8]\n\n\n\n\n\n\n\n\n\nProblem 2: Histogram from a given array and bin number\n\n\n\n\n\nSay, we are given an array \\(A=[1,2,2,3,3,3,4,4,4,4,5,5,5,5,5]\\) and number of bins. We want to\ndef generate_histogram(A, num_bins):\n  min_value = min(A)\n  max_value = max(A)\n  bin_width = (max_value-min_value)/num_bins"
   },
   {
     "objectID": "index.html#string",

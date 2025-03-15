@@ -124,6 +124,21 @@ B = [4,6,8]
 print(intersection_of_two_sets(A,B))
 ```  
 
+:::  
+
+::: {.callout-note collapse="true" appearance="simple" icon="false"}  
+## Problem 2: Histogram from a given array and bin number
+
+Say, we are given an array $A=[1,2,2,3,3,3,4,4,4,4,5,5,5,5,5]$ and number of bins. We want to 
+
+```{python}
+#| output: asis
+def generate_histogram(A, num_bins):
+  min_value = min(A)
+  max_value = max(A)
+  bin_width = (max_value-min_value)/num_bins
+```  
+
 :::
 
    
